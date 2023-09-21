@@ -5,7 +5,6 @@ html {
 
 * {
     box-sizing: border-box;
-    flex-wrap: wrap;
     flex-shrink: 1;
 
 }
@@ -203,9 +202,12 @@ header ul a {
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
     .memories img {
         max-width: 260px;
         height: auto;
+    }
+    .testymony {
+        flex-wrap: wrap;
     }
 }
