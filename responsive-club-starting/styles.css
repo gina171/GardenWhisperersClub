@@ -1,0 +1,211 @@
+html {
+    font-size: 18px;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+
+}
+
+body {
+    margin: 0;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-image: url('sky.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 70%;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+header ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+    margin: 0 20px;
+
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 200px 20px;
+    background-image: url('flowers.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px 1px 0 #000,
+                  1px 1px 0 #000;
+}
+
+.opening h1 {
+    font-size: 2.3rem;
+}
+
+.opening p {
+    font-size: 1.7rem;
+}
+
+.testymony {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(227, 245, 178);
+    color: rgb(67, 66, 66);
+    width: 100%;
+
+}
+
+.card {
+    padding: 30px 70px;
+    font-size: 1.4rem;
+    width: 80%;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.one {
+    border-right: 15px dotted white;
+}
+
+.name {
+    color:rgb(107, 107, 107);
+}
+
+.memories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+}
+
+.memories h2 {
+    background: linear-gradient(rgba(227, 245, 178, 0.1), rgba(227, 245, 178, 0.1)), url('grain.jpg');
+    margin: 0;
+    padding: 30px 0;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(227, 245, 178);
+}
+
+.memories img {
+    max-height: 300px;
+    width: auto;
+    margin: 30px;
+    padding: 10px;
+    border: 10px dotted white;
+
+}
+
+.join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('coffee.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.join p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.join h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .opening {
+        padding: 239px 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .testymony {
+        flex-direction: column;
+    }
+    .card {
+        padding: 30px;
+    }
+    .one {
+        border-right: none;
+        border-bottom: 15px dotted white;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .memories img {
+        max-width: 260px;
+        height: auto;
+    }
+}
